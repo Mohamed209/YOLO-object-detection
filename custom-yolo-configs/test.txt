@@ -1,0 +1,5 @@
+/home/mohamed_mosad/ELM_Security_Survey_Project/YOLO-object-detection/DataSet/downloads/weapons crime/36.More-high-powered-weapons-found.jpg
+/home/mohamed_mosad/ELM_Security_Survey_Project/YOLO-object-detection/DataSet/downloads/weapons crime/17.ATF-recovered-guns-courtesy-chron.com_.jpg
+/home/mohamed_mosad/ELM_Security_Survey_Project/YOLO-object-detection/DataSet/downloads/weapons crime/5.guns2.jpg
+/home/mohamed_mosad/ELM_Security_Survey_Project/YOLO-object-detection/DataSet/downloads/weapons crime/3.maywood-il-gun-charge-lawyers.jpg
+/home/mohamed_mosad/ELM_Security_Survey_Project/YOLO-object-detection/DataSet/downloads/weapons crime/8.GUNS-SIZE-PROJECT-RENNER-co-OPP.jpg

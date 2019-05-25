@@ -16,7 +16,7 @@ def downloadimages(query):
     # of images to download. ("tall, square, wide, panoramic")
     arguments = {"keywords": query,
                  "format": "jpg",
-                 "limit": 4,
+                 "limit": 50,
                  "print_urls": True,
                  "size": "medium",
                  "aspect_ratio": "panoramic"}
@@ -27,7 +27,7 @@ def downloadimages(query):
     except FileNotFoundError:
         arguments = {"keywords": query,
                      "format": "jpg",
-                     "limit": 4,
+                     "limit": 50,
                      "print_urls": True,
                      "size": "medium"}
 

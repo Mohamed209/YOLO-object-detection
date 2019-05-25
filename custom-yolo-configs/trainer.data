@@ -1,0 +1,5 @@
+classes= 1  
+train  = custom-yolo-configs/train.txt  
+valid  = custom-yolo-configs/test.txt  
+names = custom-yolo-configs/objects.names  
+backup = backup/
