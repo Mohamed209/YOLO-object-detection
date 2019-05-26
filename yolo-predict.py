@@ -2,13 +2,25 @@ import cv2
 import argparse
 import numpy as np
 
+
+#ap = argparse.ArgumentParser()
+#ap.add_argument('-c', '--config', 
+#                help = 'path to config file', default="/custom-yolo-configs/yolov3-tiny.cfg")
+#ap.add_argument('-w', '--weights', 
+#                help = 'path to pre-trained weights', default="/custom-yolo-configs/darknet53.conv.74")
+#ap.add_argument('-cl', '--classes', 
+#                help = 'path to objects.names',default="/custom-yolo-configs/objects.names")
+#args = ap.parse_args()
+
+
 ap = argparse.ArgumentParser()
 ap.add_argument('-c', '--config', 
-                help = 'path to config file', default="/custom-yolo-configs/yolov3-tiny.cfg")
+                help = 'path to config file', default="default-yolo-configs/yolov3-tiny.cfg")
 ap.add_argument('-w', '--weights', 
-                help = 'path to pre-trained weights', default="/yolo-pretrained-weights/darknet53.conv.74")
-ap.add_argument('-cl', '--classes', 
-                help = 'path to objects.names',default="/custom-yolo-configs/objects.names")
+                help = 'path to pre-trained weights', default="default-yolo-configs/yolov3-tiny.weights")
+
+ap.add_argument('-cl', '--classes',
+               help = 'path to objects.names',default="default-yolo-configs/yolov3.txt")
 args = ap.parse_args()
 
 
@@ -30,7 +42,8 @@ def draw_pred(img, class_id, confidence, x, y, x_plus_w, y_plus_h):
     cv2.putText(img, label, (x-10,y-10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
     
 # Define a window to show the cam stream on it
-window_title= "Rubiks Detector"   
+#window_title= "Rubiks Detector"
+window_title= "YOLO Object Detection"
 cv2.namedWindow(window_title, cv2.WINDOW_NORMAL)
 
 
@@ -69,7 +82,7 @@ while cv2.waitKey(1) < 0 or False:
     nms_threshold = 0.4
     
     
-    #print(len(outs))
+    #print(outs)
     
     # In case of tiny YOLOv3 we have 2 output(outs) from 2 different scales [3 bounding box per each scale]
     # For normal normal YOLOv3 we have 3 output(outs) from 3 different scales [3 bounding box per each scale]

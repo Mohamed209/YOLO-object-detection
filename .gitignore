@@ -1,3 +1,4 @@
 darknet/*
 backup/*
-yolo-pretrained-weights/*
+custom-yolo-configs/*
+default-yolo-configs/*
